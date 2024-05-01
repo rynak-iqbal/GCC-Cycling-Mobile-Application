@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "474232581860",
+    "project_id": "gcc-cycling-mobile-application",
+    "storage_bucket": "gcc-cycling-mobile-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474232581860:android:ca02d0ee474af410f546f1",
+        "android_client_info": {
+          "package_name": "com.example.gcccyclingmobileapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPWLMMx5jjQJ9sL1OlE-ZDO_5I8E01Ofs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

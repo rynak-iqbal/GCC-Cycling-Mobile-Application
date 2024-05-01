@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AdminPage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Page"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/eventTypeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Type"
+            android:layout_below="@id/titleTextView"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/eventDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Description"
+            android:layout_below="@id/eventTypeEditText"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/ageRequirementEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age Requirement"
+            android:layout_below="@id/eventDescriptionEditText"
+            android:layout_marginTop="16dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/paceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pace"
+            android:layout_below="@id/ageRequirementEditText"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/levelEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Level"
+            android:layout_below="@id/paceEditText"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Event Type"
+            android:layout_below="@id/levelEditText"
+            android:layout_marginTop="24dp"/>
+
+        <Spinner
+            android:id="@+id/eventTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/addButton"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Event Type"
+            android:layout_below="@id/eventTypeSpinner"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Event Type"
+            android:layout_below="@id/editButton"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:id="@+id/userSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Button to delete the selected user -->
+        <Button
+            android:id="@+id/deleteUserButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete User"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</ScrollView>
